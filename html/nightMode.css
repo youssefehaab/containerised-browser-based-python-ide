@@ -1,0 +1,384 @@
+body {
+    /* background-color:rgb(27, 27, 27); */
+    /* background-color: #242e35; */
+    /* background-color: #1c2329; */
+    background-color: #191f25;
+    margin: 0;
+    width: 100%;
+}
+#header {
+    margin: 10px;
+    height: 50px;
+    font-size: 50px;
+    color: rgb(179, 177, 177);
+    font-family: monospace;
+    text-align: center;
+}
+.content {
+    display:inline-flex;
+    width: 100%;
+}
+#folderArea {
+    background-color: #2d303d;
+    margin: 10px;
+    margin-right: 0;
+    border-radius: 5px;
+    width: 205px;
+    resize: horizontal;
+    overflow: auto;
+    max-width: 300px;
+    min-width: 150px;
+    height: 400px;
+    padding-top: 10px;
+    color: rgb(179, 177, 177);
+    font-family: monospace;
+    font-size: 15px;
+}
+.buttons{
+    display: inline-flex;
+    width: 100%;
+}
+.leftButtons{
+    display: inline-flex;
+    width: 100%;
+}
+ul{
+    list-style: disc;
+    list-style-position: outside;
+    margin: 10px;
+    margin-left: -10px;
+    padding-left: 30px;
+}
+li{
+    margin: 10px;
+}
+li:hover{
+    color: rgb(139, 139, 139);
+    cursor: pointer;
+}
+div.editorArea {
+    margin: 10px;
+    width: 100%;
+}
+#fileInputControl{
+    display: none;
+}
+#themeButton{
+    float: right;
+    /* background-color: #282a36; */
+    background-color: #2d303d;
+    color: rgb(179, 177, 177);
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(5, 5, 5);
+    font-family: monospace;
+    font-size: 30px;
+    height: 30px;
+    width: 40px;
+    margin-right: 10px;
+    margin-top: -55px;
+    top: 60px;
+    padding-bottom: 45px;
+}
+#themeButton:hover{
+    background-color: #1a1c24;
+    cursor: pointer;
+    color: rgb(139, 139, 139);
+}
+#b1{
+    /* background-color: #282a36; */
+    background-color: #2d303d;
+    color: rgb(179, 177, 177);
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(5, 5, 5);
+    font-family: monospace;
+    font-size: 14px;
+    height: 22px;
+    width: 55px;
+    margin-left: 10px;
+    padding: 0px;
+}
+#b1:hover{
+    background-color: #1a1c24;
+    cursor: pointer;
+    color: rgb(139, 139, 139);
+}
+#b2{
+    /* background-color: #282a36; */
+    background-color: #2d303d;
+    color: rgb(179, 177, 177);
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(5, 5, 5);
+    font-family: monospace;
+    font-size: 14px;
+    height: 22px;
+    width: 55px;
+    margin-left: 5px;
+    padding: 0px;
+}
+#b2:hover{
+    background-color: #1a1c24;
+    cursor: pointer;
+    color: rgb(139, 139, 139);
+}
+#b2:disabled{
+    background-color: rgb(77, 77, 77);
+    color: rgb(105, 105, 105);
+    border-color: rgb(5, 5, 5);
+    cursor: auto;
+}
+#b3{
+    /* background-color: #282a36; */
+    background-color: #2d303d;
+    color: rgb(179, 177, 177);
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(5, 5, 5);
+    font-family: monospace;
+    font-size: 11px;
+    height: 22px;
+    width: 55px;
+    margin-left: 5px;
+    padding: 0px;
+}
+#b3:hover{
+    background-color: #1a1c24;
+    cursor: pointer;
+    color: rgb(139, 139, 139);
+}
+#b4{
+    float: right;
+    /* background-color: #282a36; */
+    background-color: #2d303d;
+    color: rgb(179, 177, 177);
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(5, 5, 5);
+    font-family: monospace;
+    font-size: 11px;
+    height: 22px;
+    width: 55px;
+    margin-right: 5px;
+}
+#b4:hover{
+    background-color: #1a1c24;
+    cursor: pointer;
+    color: rgb(139, 139, 139);
+}
+#b4:disabled{
+    background-color: rgb(77, 77, 77);
+    color: rgb(105, 105, 105);
+    border-color: rgb(5, 5, 5);
+    cursor: auto;
+}
+#b5{
+    float: right;
+    /* background-color: #282a36; */
+    background-color: #2d303d;
+    color: rgb(179, 177, 177);
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(5, 5, 5);
+    font-family: monospace;
+    font-size: 16px;
+    height: 22px;
+    width: 55px;
+    margin-right: 10px;
+    padding: 0px;
+}
+#b5:hover{
+    background-color: #1a1c24;
+    cursor: pointer;
+    color: rgb(139, 139, 139);
+}
+#b5:disabled{
+    background-color: rgb(77, 77, 77);
+    color: rgb(105, 105, 105);
+    border-color: rgb(5, 5, 5);
+    cursor: auto;
+}
+#b6{
+    float: right;
+    /* background-color: #282a36; */
+    background-color: #2d303d;
+    color: rgb(179, 177, 177);
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(5, 5, 5);
+    font-family: monospace;
+    font-size: 16px;
+    height: 22px;
+    width: 55px;
+    margin-right: 10px;
+    padding: 0px;
+}
+#b6:hover{
+    background-color: #1a1c24;
+    cursor: pointer;
+    color: rgb(139, 139, 139);
+}
+#b6:disabled{
+    background-color: rgb(77, 77, 77);
+    color: rgb(105, 105, 105);
+    border-color: rgb(5, 5, 5);
+    cursor: auto;
+}
+#accordion .contentBox{
+    display: inline-flex;
+    width:100%;
+    position: absolute;
+    bottom: 10px;
+}
+#accordion .contentBox #output{
+    width: 100%;
+}
+#accordion .contentBox #variablesLabel{
+    padding: 10px;
+    /* background: #282a36; */
+    background: #2d303d;
+    color: rgb(179, 177, 177);
+    font-family: monospace;
+    cursor: pointer;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(5, 5, 5);
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#accordion .contentBox #label{
+    padding: 10px;
+    /* background: #282a36; */
+    background: #2d303d;
+    color: rgb(179, 177, 177);
+    font-family: monospace;
+    cursor: pointer;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(5, 5, 5);
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#accordion .contentBox #variablesLabel:hover{
+    background-color: #1a1c24;
+    cursor: pointer;
+    color: rgb(139, 139, 139);
+}
+#accordion .contentBox #label:hover{
+    background-color: #1a1c24;
+    cursor: pointer;
+    color: rgb(139, 139, 139);
+}
+#accordion .contentBox #variablesPre{
+    position:relative;
+    /* background-color: #282a36; */
+    background-color: #2d303d;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: white;
+    font-family: 'VT323', monospace;
+    font-size: 17px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#accordion .contentBox.active #variablesPre{
+    overflow: auto;
+    height: 130px;
+    max-height: 130px;
+    padding: 10px;
+    margin-top: 0px;
+}
+#accordion .contentBox #outputPre{
+    position:relative;
+    background-color: #2d303d;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    border-radius: 5px;
+    color: white;
+    font-family: 'VT323', monospace;
+    font-size: 17px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#accordion .contentBox.active #outputPre{
+    overflow: auto;
+    height: 130px;
+    max-height: 130px;
+    padding: 10px;
+    margin-top: 0px;
+
+}
+#input{
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-family: \'VT323\', monospace;
+    font-size: 17px;
+    outline: none;
+    margin: 0px;
+    padding: 0px;
+}
+#nextButton{
+    background-color: #2d303d;
+    color: rgb(179, 177, 177);
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(5, 5, 5);
+    font-family: monospace;
+    font-size: 16px;
+    height: 22px;
+    width: 55px;
+    margin-right: 10px;
+    padding: 0px;
+}
+#nextButton:hover{
+    background-color: #1a1c24;
+    cursor: pointer;
+    color: rgb(139, 139, 139);
+}
+#exitButton{
+    background-color: #2d303d;
+    color: rgb(179, 177, 177);
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(5, 5, 5);
+    font-family: monospace;
+    font-size: 16px;
+    height: 22px;
+    width: 55px;
+    margin-right: 10px;
+    padding: 0px;
+}
+#exitButton:hover{
+    background-color: #1a1c24;
+    cursor: pointer;
+    color: rgb(139, 139, 139);
+}
+#stepButton{
+    background-color: #2d303d;
+    color: rgb(179, 177, 177);
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(5, 5, 5);
+    font-family: monospace;
+    font-size: 16px;
+    height: 22px;
+    width: 55px;
+    margin-right: 10px;
+    padding: 0px;
+}
+#stepButton:hover{
+    background-color: #1a1c24;
+    cursor: pointer;
+    color: rgb(139, 139, 139);
+}

@@ -1,0 +1,381 @@
+body {
+    /* background-color:#9bb4ca; */
+    /* background-color: #8cb1c4; */
+    /* background-color: #b5e5ff; */
+    /* background-color: #9dc7dd; */
+    /* background-color: rgb(0, 218, 218); */
+    /* background-color: lightgrey; */
+    /* background-color: #4BC7CF; */
+    /* background-color: #add8e6; */
+    background-color: #72bcd4;
+    margin: 0;
+    width: 100%;
+}
+#header {
+    margin: 10px;
+    height: 50px;
+    font-size: 50px;
+    /* color: rgb(248,248,255); */
+    color: #e8f4f8;
+    font-family: monospace;
+    text-align: center;
+}
+.content {
+    display:inline-flex;
+    width: 100%;
+}
+#folderArea {
+    /* background-color: rgb(248,248,255); */
+    /* background-color: white; */
+    /* background-color: #e8f4f8; */
+    background-color: #d6ecf3;
+    margin: 10px;
+    margin-right: 0;
+    border-radius: 5px;
+    width: 205px;
+    resize: horizontal;
+    overflow: auto;
+    max-width: 300px;
+    min-width: 150px;
+    height: 400px;
+    padding-top: 10px;
+    font-family: monospace;
+    font-size: 15px;
+}
+.buttons{
+    display: inline-flex;
+    width: 100%;
+}
+.leftButtons{
+    display: inline-flex;
+    width: 100%;
+}
+ul{
+    list-style: disc;
+    list-style-position: outside;
+    margin: 10px;
+    margin-left: -10px;
+    padding-left: 30px;
+}
+li{
+    color: #000080;
+    margin: 10px;
+}
+li:hover{
+    color: rgb(104, 104, 104);
+    cursor: pointer;
+}
+div.editorArea {
+    margin: 10px;
+    width: 100%;
+}
+#fileInputControl{
+    display: none;
+}
+#themeButton{
+    float: right;
+    background-color: #d6ecf3;
+    color: #002060;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #002060;
+    font-family: monospace;
+    font-size: 30px;
+    height: 30px;
+    width: 40px;
+    margin-right: 10px;
+    margin-top: -55px;
+    top: 60px;
+    padding-bottom: 45px;
+}
+#themeButton:hover{
+    background-color: rgb(226, 226, 226);
+    cursor: pointer;
+    color: rgb(71, 71, 71);
+}
+#b1{
+    background-color: #d6ecf3;
+    color: #002060;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #002060;
+    font-family: monospace;
+    font-size: 14px;
+    height: 22px;
+    width: 55px;
+    margin-left: 10px;
+    padding: 0px;
+}
+#b1:hover{
+    background-color: rgb(226, 226, 226);
+    cursor: pointer;
+    color: rgb(71, 71, 71);
+
+}
+#b2{
+    background-color: #d6ecf3;
+    color: #002060;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #002060;
+    font-family: monospace;
+    font-size: 14px;
+    height: 22px;
+    width: 55px;
+    margin-left: 5px;
+    padding: 0px;
+}
+#b2:hover{
+    background-color: rgb(226, 226, 226);
+    cursor: pointer;
+    color:rgb(71, 71, 71);
+}
+#b2:disabled{
+    background-color: rgb(212, 212, 212);
+    color: rgb(71, 71, 71);
+    border-color: #7F7F7F;
+    cursor: auto;
+}
+#b3{
+    background-color: #d6ecf3;
+    color: #002060;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #002060;
+    font-family: monospace;
+    font-size: 11px;
+    height: 22px;
+    width: 55px;
+    margin-left: 5px;
+    padding: 0px;
+}
+#b3:hover{
+    background-color: rgb(226, 226, 226);
+    cursor: pointer;
+    color: rgb(71, 71, 71);
+}
+#b4{
+    float: right;
+    background-color: #d6ecf3;
+    color: #002060;
+    border-radius: 5px;
+    border-style: solid;
+    border-color:#002060;
+    font-family: monospace;
+    font-size: 11px;
+    height: 22px;
+    width: 55px;
+    margin-right: 5px;
+}
+#b4:hover{
+    background-color: rgb(226, 226, 226);
+    cursor: pointer;
+    color: rgb(71, 71, 71);
+}
+#b4:disabled{
+    background-color: rgb(212, 212, 212);
+    color: rgb(71, 71, 71);
+    border-color: #7F7F7F;
+    cursor: auto;
+}
+#b5{
+    float: right;
+    background-color: #d6ecf3;
+    color: #002060;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #002060;
+    font-family: monospace;
+    font-size: 16px;
+    height: 22px;
+    width: 55px;
+    margin-right: 10px;
+    padding: 0px;
+}
+#b5:hover{
+    background-color: rgb(226, 226, 226);
+    cursor: pointer;
+    color: rgb(71, 71, 71);
+}
+#b5:disabled{
+    background-color: rgb(212, 212, 212);
+    color: rgb(71, 71, 71);
+    border-color: #7F7F7F;
+    cursor: auto;
+}
+#b6{
+    float: right;
+    background-color: #d6ecf3;
+    color: #002060;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #002060;
+    font-family: monospace;
+    font-size: 16px;
+    height: 22px;
+    width: 55px;
+    margin-right: 10px;
+    padding: 0px;
+}
+#b6:hover{
+    background-color: rgb(226, 226, 226);
+    cursor: pointer;
+    color: rgb(71, 71, 71);
+}
+#b6:disabled{
+    background-color: rgb(212, 212, 212);
+    color: rgb(71, 71, 71);
+    border-color: #7F7F7F;
+    cursor: auto;
+}
+#accordion .contentBox{
+    display: inline-flex;
+    width:100%;
+    position: absolute;
+    bottom: 10px;
+}
+#accordion .contentBox #output{
+    width: 100%;
+}
+#accordion .contentBox #variablesLabel{
+    padding: 10px;
+    background: #d6ecf3;
+    color: #002060;
+    font-family: monospace;
+    cursor: pointer;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #002060;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+#accordion .contentBox #label{
+    padding: 10px;
+    background: #e8f6fa;
+    color:#002060;
+    font-family: monospace;
+    cursor: pointer;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #002060;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+#accordion .contentBox #variablesLabel:hover{
+    background-color: rgb(226, 226, 226);
+    cursor: pointer;
+    color: rgb(71, 71, 71);
+}
+#accordion .contentBox #label:hover{
+    background-color: rgb(226, 226, 226);
+    cursor: pointer;
+    color: rgb(71, 71, 71);
+}
+#accordion .contentBox #variablesPre{
+    position: relative;
+    background-color: #d6ecf3;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    color:#002060;
+    font-family: 'VT323', monospace;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+#accordion .contentBox.active #variablesPre{
+    overflow: auto;
+    height: 130px;
+    max-height: 130px;
+    padding: 10px;
+    margin-top: 0px;
+}
+#accordion .contentBox #outputPre{
+    position: relative;
+    background-color: #d6ecf3;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    color:#002060;
+    font-family: 'VT323', monospace;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+#accordion .contentBox.active #outputPre{
+    overflow: auto;
+    height: 130px;
+    max-height: 130px;
+    padding: 10px;
+    margin-top: 0px;
+}
+#input{
+    border: none;
+    background-color: transparent;
+    color: #002060;
+    font-family: \'VT323\', monospace;
+    font-size: 17px;
+    outline: none;
+    margin: 0px;
+    padding: 0px;
+}
+#nextButton{
+    background-color: #d6ecf3;
+    color: #002060;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #002060;
+    font-family: monospace;
+    font-size: 16px;
+    height: 22px;
+    width: 55px;
+    margin-right: 10px;
+    padding: 0px;
+}
+#nextButton:hover{
+    background-color: rgb(226, 226, 226);
+    cursor: pointer;
+    color: rgb(71, 71, 71);
+}
+#exitButton{
+    background-color: #d6ecf3;
+    color: #002060;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #002060;
+    font-family: monospace;
+    font-size: 16px;
+    height: 22px;
+    width: 55px;
+    margin-right: 10px;
+    padding: 0px;
+}
+#exitButton:hover{
+    background-color: rgb(226, 226, 226);
+    cursor: pointer;
+    color: rgb(71, 71, 71);
+}
+#stepButton{
+    background-color: #d6ecf3;
+    color: #002060;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #002060;
+    font-family: monospace;
+    font-size: 16px;
+    height: 22px;
+    width: 55px;
+    margin-right: 10px;
+    padding: 0px;
+}
+#stepButton:hover{
+    background-color: rgb(226, 226, 226);
+    cursor: pointer;
+    color: rgb(71, 71, 71);
+}
